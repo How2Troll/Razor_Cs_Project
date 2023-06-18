@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Data;
-using RazorPagesMovie.Models;
+using RazorPagesCurrency.Data;
+using RazorPagesCurrency.Models;
 
-namespace RazorPagesMovie.Pages_Movies
+namespace RazorPagesCurrency.Pages_Currencys
 {
     public class EditModel : PageModel
     {
-        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
+        private readonly RazorPagesCurrency.Data.RazorPagesCurrencyContext _context;
 
-        public EditModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
+        public EditModel(RazorPagesCurrency.Data.RazorPagesCurrencyContext context)
         {
             _context = context;
         }
@@ -56,7 +56,7 @@ namespace RazorPagesMovie.Pages_Movies
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MovieExists(Currency.Id))
+                if (!CurrencyExists(Currency.Id))
                 {
                     return NotFound();
                 }
@@ -69,7 +69,7 @@ namespace RazorPagesMovie.Pages_Movies
             return RedirectToPage("./Index");
         }
 
-        private bool MovieExists(int id)
+        private bool CurrencyExists(int id)
         {
           return (_context.Currency?.Any(e => e.Id == id)).GetValueOrDefault();
         }

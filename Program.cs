@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Data;
-using RazorPagesMovie.Models;
+using RazorPagesCurrency.Data;
+using RazorPagesCurrency.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<RazorPagesMovieContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesMovieContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMovieContext' not found.")));
+builder.Services.AddDbContext<RazorPagesCurrencyContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesCurrencyContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesCurrencyContext' not found.")));
 
 var app = builder.Build();
 

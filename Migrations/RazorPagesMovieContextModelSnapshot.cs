@@ -3,21 +3,21 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RazorPagesMovie.Data;
+using RazorPagesCurrency.Data;
 
 #nullable disable
 
-namespace RazorPagesMovie.Migrations
+namespace RazorPagesCurrency.Migrations
 {
-    [DbContext(typeof(RazorPagesMovieContext))]
-    partial class RazorPagesMovieContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(RazorPagesCurrencyContext))]
+    partial class RazorPagesCurrencyContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
 
-            modelBuilder.Entity("RazorPagesMovie.Models.Movie", b =>
+            modelBuilder.Entity("RazorPagesCurrency.Models.Currency", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,7 +32,7 @@ namespace RazorPagesMovie.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie");
+                    b.ToTable("Currency");
                 });
 #pragma warning restore 612, 618
         }

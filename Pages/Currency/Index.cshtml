@@ -1,5 +1,5 @@
 @page
-@model RazorPagesMovie.Pages_Movies.IndexModel
+@model RazorPagesCurrency.Pages_Currencys.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -13,7 +13,7 @@
 
 <form>
     <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
+        <select asp-for="CurrencyGenre" asp-items="Model.Genres">
             <option value="">All</option>
         </select>
         Title: <input type="text" asp-for="SearchString" />

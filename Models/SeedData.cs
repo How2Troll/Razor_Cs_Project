@@ -1,19 +1,19 @@
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Data;
+using RazorPagesCurrency.Data;
 
-namespace RazorPagesMovie.Models;
+namespace RazorPagesCurrency.Models;
 
 public static class SeedData
 {
     public static void Initialize(IServiceProvider serviceProvider)
     {
-        using (var context = new RazorPagesMovieContext(
+        using (var context = new RazorPagesCurrencyContext(
             serviceProvider.GetRequiredService<
-                DbContextOptions<RazorPagesMovieContext>>()))
+                DbContextOptions<RazorPagesCurrencyContext>>()))
         {
             if (context == null || context.Currency == null)
             {
-                throw new ArgumentNullException("Null RazorPagesMovieContext");
+                throw new ArgumentNullException("Null RazorPagesCurrencyContext");
             }
 
             // Look for any currencies.

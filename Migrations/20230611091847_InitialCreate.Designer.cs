@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RazorPagesMovie.Data;
+using RazorPagesCurrency.Data;
 
 #nullable disable
 
-namespace RazorPagesMovie.Migrations
+namespace RazorPagesCurrency.Migrations
 {
-    [DbContext(typeof(RazorPagesMovieContext))]
+    [DbContext(typeof(RazorPagesCurrencyContext))]
     [Migration("20230611091847_InitialCreate")]
     partial class InitialCreate
     {
@@ -20,7 +20,7 @@ namespace RazorPagesMovie.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
 
-            modelBuilder.Entity("RazorPagesMovie.Models.Movie", b =>
+            modelBuilder.Entity("RazorPagesCurrency.Models.Currency", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

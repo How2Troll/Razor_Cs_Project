@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\how2t\\OneDrive\\Dokumenty\\StockMarketApiRazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorPagesMovie.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RazorPagesMovie.bundle.scp.css"
+      "Id": "C:\\Users\\how2t\\OneDrive\\Dokumenty\\StockMarketApiRazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorPagesCurrency.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RazorPagesCurrency.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\how2t\\OneDrive\\Dokumenty\\StockMarketApiRazor\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RazorPagesMovie.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RazorPagesCurrency.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RazorPagesMovie.props",
-      "PackagePath": "build\\RazorPagesMovie.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RazorPagesCurrency.props",
+      "PackagePath": "build\\RazorPagesCurrency.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RazorPagesMovie.props",
-      "PackagePath": "buildMultiTargeting\\RazorPagesMovie.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RazorPagesCurrency.props",
+      "PackagePath": "buildMultiTargeting\\RazorPagesCurrency.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RazorPagesMovie.props",
-      "PackagePath": "buildTransitive\\RazorPagesMovie.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RazorPagesCurrency.props",
+      "PackagePath": "buildTransitive\\RazorPagesCurrency.props"
     }
   ],
   "ElementsToRemove": []

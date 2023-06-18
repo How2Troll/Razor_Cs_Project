@@ -5,17 +5,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Data;
-using RazorPagesMovie.Models;
+using RazorPagesCurrency.Data;
+using RazorPagesCurrency.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace RazorPagesMovie.Pages_Movies
+namespace RazorPagesCurrency.Pages_Currencys
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
+        private readonly RazorPagesCurrency.Data.RazorPagesCurrencyContext _context;
 
-        public IndexModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
+        public IndexModel(RazorPagesCurrency.Data.RazorPagesCurrencyContext context)
         {
             _context = context;
         }
@@ -28,7 +28,7 @@ namespace RazorPagesMovie.Pages_Movies
         public SelectList? Genres { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public string? MovieGenre { get; set; }
+        public string? CurrencyGenre { get; set; }
 
         public async Task OnGetAsync()
         {

@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Data;
-using RazorPagesMovie.Models;
+using RazorPagesCurrency.Data;
+using RazorPagesCurrency.Models;
 
-namespace RazorPagesMovie.Pages_Movies
+namespace RazorPagesCurrency.Pages_Currencys
 {
     public class DetailsModel : PageModel
     {
-        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
+        private readonly RazorPagesCurrency.Data.RazorPagesCurrencyContext _context;
 
-        public DetailsModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
+        public DetailsModel(RazorPagesCurrency.Data.RazorPagesCurrencyContext context)
         {
             _context = context;
         }

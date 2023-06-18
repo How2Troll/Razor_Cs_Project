@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n/Pljm+/pvvhxHxSF5GmMn+Pu7uwN8ix/7rSVfJKcl3mNzZe2DTRseszNCOHNR5iHE3VqSNs7if3204Pf3Y4iA==",
+  "dgSpecHash": "r1696XkK1yUBVYrHcA1gn3wPwmoA0F+E+etxXmH9jrW8odILJOlzYTlNk8y9tyOYY1beQy7/VglyEN/hsYc3xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\how2t\\OneDrive\\Dokumenty\\StockMarketApiRazor\\RazorPagesMovie.csproj",
+  "projectFilePath": "C:\\Users\\how2t\\OneDrive\\Dokumenty\\StockMarketApiRazor\\RazorPagesCurrency.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\how2t\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\how2t\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
