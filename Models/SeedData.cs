@@ -22,35 +22,11 @@ public static class SeedData
                  return;   // DB has been seeded
              }
 
-            var lastThirtyDaysRate = new List<LastThirtyDaysRate>();
-            var lastThirtyDaysRateExample = new LastThirtyDaysRate
-            {
-            dateTime = DateTime.Today.AddDays(1),
-            ExchangeRateElement = 1.25M
-            };
-            lastThirtyDaysRate.Add(lastThirtyDaysRateExample);
-
-            lastThirtyDaysRateExample = new LastThirtyDaysRate
-            {
-            dateTime = DateTime.Today.AddDays(2),
-            ExchangeRateElement = 1.28M
-            };
-            lastThirtyDaysRate.Add(lastThirtyDaysRateExample);
-
-            lastThirtyDaysRateExample = new LastThirtyDaysRate
-            {
-            dateTime = DateTime.Now,
-            ExchangeRateElement = 1.23M
-            };
-            lastThirtyDaysRate.Add(lastThirtyDaysRateExample);
-
-
             context.Currency.AddRange(
                 new Currency
                 {
                     Name = "USD",
                     ExchangeRate = 1.0M,
-                    ListExchange = lastThirtyDaysRate
                 },
 
                 new Currency
@@ -80,7 +56,7 @@ public static class SeedData
             var currency = context.Currency.FirstOrDefault(c => c.Name == "USD");
             if (currency != null)
             {
-                currency.ListExchange = lastThirtyDaysRate;
+                //currency.ListExchange = lastThirtyDaysRate;
                 await context.SaveChangesAsync();
             }
         }

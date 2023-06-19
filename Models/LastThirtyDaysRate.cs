@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RazorPagesCurrency.Models;
 
-public class LastThirtyDaysRate
+ public class LastThirtyDaysRate
     {
         [Key]
         public int Id { get; set; }
 
         public decimal ExchangeRateElement { get; set; }
-        public DateTime dateTime { get; set; }
+        public DateTime DateTime { get; set; }
 
         public int CurrencyId { get; set; } // Foreign key property
 
@@ -18,6 +18,6 @@ public class LastThirtyDaysRate
 
         public override string ToString()
         {
-            return $"{dateTime}: {ExchangeRateElement}";
+            return $"{DateTime}: {ExchangeRateElement}";
         }
     }

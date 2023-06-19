@@ -37,7 +37,7 @@
         </dt>
         <dd class="col-sm-10">
             <ul>
-                @if (Model.Currency.ListExchange != null && Model.Currency.ListExchange.Count > 0)
+                @* @if (Model.Currency.ListExchange != null && Model.Currency.ListExchange.Count > 0)
                 {
                     @foreach (var rate in Model.Currency.ListExchange)
                     {
@@ -47,7 +47,7 @@
                 else
                 {
                     <p>Sorry, the currency details are not available.</p>
-                }
+                } *@
             </ul>
         </dd>
     </dl>
