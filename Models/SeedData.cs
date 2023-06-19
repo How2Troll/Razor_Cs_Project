@@ -53,14 +53,9 @@ public static class SeedData
         {
             var context = scope.ServiceProvider.GetRequiredService<RazorPagesCurrencyContext>();
 
-            var currency = context.Currency.FirstOrDefault(c => c.Name == "USD");
-            if (currency != null)
-            {
-                //currency.ListExchange = lastThirtyDaysRate;
-                await context.SaveChangesAsync();
-            }
+            context.LastThirtyDaysRates.AddRange(lastThirtyDaysRate);
+            await context.SaveChangesAsync();
         }
     }
-
 
 }

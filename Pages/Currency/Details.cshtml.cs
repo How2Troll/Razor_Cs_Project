@@ -19,24 +19,29 @@ namespace RazorPagesCurrency.Pages_Currency
             _context = context;
         }
 
-      public Currency Currency { get; set; } = default!; 
+      public Currency Currency { get; set; }
+
+      public List<LastThirtyDaysRate> ListExchange { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Currency == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var currency = await _context.Currency.FirstOrDefaultAsync(m => m.Id == id);
-            if (currency == null)
+            Currency = await _context.Currency.FindAsync(id);
+
+            if (Currency == null)
             {
                 return NotFound();
             }
-            else 
-            {
-                Currency = currency;
-            }
+
+            // Fetch the ListExchange based on CurrencyId
+            ListExchange = await _context.LastThirtyDaysRates
+                .Where(rate => rate.CurrencyId == id)
+                .ToListAsync();
+
             return Page();
         }
     }

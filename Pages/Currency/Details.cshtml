@@ -36,19 +36,19 @@
             Exchange Rate History
         </dt>
         <dd class="col-sm-10">
-            <ul>
-                @* @if (Model.Currency.ListExchange != null && Model.Currency.ListExchange.Count > 0)
+                <ul>
+            @if (Model.ListExchange != null && Model.ListExchange.Count > 0)
+            {
+                foreach (var rate in Model.ListExchange)
                 {
-                    @foreach (var rate in Model.Currency.ListExchange)
-                    {
-                        <li>@rate.dateTime - @rate.ExchangeRateElement.ToString()</li>
-                    }
+                    <li>@rate.DateTime - @rate.ExchangeRateElement.ToString()</li>
                 }
-                else
-                {
-                    <p>Sorry, the currency details are not available.</p>
-                } *@
-            </ul>
+            }
+            else
+            {
+                <p>No exchange rate history available for the specified currency.</p>
+            }
+        </ul>
         </dd>
     </dl>
 </div>
