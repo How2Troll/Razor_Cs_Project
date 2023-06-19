@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using RazorPagesCurrency.Data;
 using RazorPagesCurrency.Models;
 
-namespace RazorPagesCurrency.Pages_Currencys
+namespace RazorPagesCurrency.Pages_Currency
 {
     public class DetailsModel : PageModel
     {

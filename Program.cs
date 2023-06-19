@@ -28,8 +28,14 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapRazorPages();
+}); //it was added
+
 app.UseAuthorization();
 
-app.MapRazorPages();
+//app.MapRazorPages();
 
 app.Run();

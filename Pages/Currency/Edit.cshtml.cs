@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using RazorPagesCurrency.Data;
 using RazorPagesCurrency.Models;
 
-namespace RazorPagesCurrency.Pages_Currencys
+namespace RazorPagesCurrency.Pages_Currency
 {
     public class EditModel : PageModel
     {
@@ -36,6 +36,7 @@ namespace RazorPagesCurrency.Pages_Currencys
                 return NotFound();
             }
             Currency = currency;
+            
             return Page();
         }
 

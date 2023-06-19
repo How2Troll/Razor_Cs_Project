@@ -15,5 +15,6 @@ namespace RazorPagesCurrency.Data
         }
 
         public DbSet<RazorPagesCurrency.Models.Currency> Currency { get; set; } = default!;
+        public DbSet<LastThirtyDaysRate> LastThirtyDaysRates { get; set; }
     }
 }

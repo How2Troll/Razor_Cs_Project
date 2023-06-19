@@ -9,7 +9,7 @@ using RazorPagesCurrency.Data;
 using RazorPagesCurrency.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace RazorPagesCurrency.Pages_Currencys
+namespace RazorPagesCurrency.Pages_Currency
 {
     public class IndexModel : PageModel
     {
