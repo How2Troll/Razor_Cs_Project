@@ -1,8 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using RazorPagesCurrency.Data;
 using RazorPagesCurrency.Models;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Logging.AddConsole();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<RazorPagesCurrencyContext>(options =>
@@ -32,10 +35,8 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     endpoints.MapRazorPages();
-}); //it was added
+});
 
 app.UseAuthorization();
-
-//app.MapRazorPages();
 
 app.Run();

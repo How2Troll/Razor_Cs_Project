@@ -11,8 +11,8 @@ using RazorPagesCurrency.Data;
 namespace RazorPagesCurrency.Migrations
 {
     [DbContext(typeof(RazorPagesCurrencyContext))]
-    [Migration("20230619132448_UpdateLastThirtyDaysRate")]
-    partial class UpdateLastThirtyDaysRate
+    [Migration("20230619134415_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

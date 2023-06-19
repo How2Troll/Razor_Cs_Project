@@ -1,8 +1,0 @@
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.csproj.AssemblyReference.cache
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.AssemblyInfoInputs.cache
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.AssemblyInfo.cs
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.csproj.CoreCompileInputs.cache
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.RazorAssemblyInfo.cache
-C:\Users\how2t\OneDrive\Dokumenty\StockMarketApiRazor\obj\Debug\net7.0\RazorPagesCurrency.RazorAssemblyInfo.cs

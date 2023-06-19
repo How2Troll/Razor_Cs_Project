@@ -6,18 +6,24 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RazorPagesCurrency.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateLastThirtyDaysRate : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<decimal>(
-                name: "ExchangeRate",
-                table: "Currency",
-                type: "decimal(4, 6)",
-                nullable: false,
-                oldClrType: typeof(decimal),
-                oldType: "decimal(18, 2)");
+            migrationBuilder.CreateTable(
+                name: "Currency",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 60, nullable: false),
+                    ExchangeRate = table.Column<decimal>(type: "decimal(4, 6)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Currency", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "LastThirtyDaysRates",
@@ -51,13 +57,8 @@ namespace RazorPagesCurrency.Migrations
             migrationBuilder.DropTable(
                 name: "LastThirtyDaysRates");
 
-            migrationBuilder.AlterColumn<decimal>(
-                name: "ExchangeRate",
-                table: "Currency",
-                type: "decimal(18, 2)",
-                nullable: false,
-                oldClrType: typeof(decimal),
-                oldType: "decimal(4, 6)");
+            migrationBuilder.DropTable(
+                name: "Currency");
         }
     }
 }
